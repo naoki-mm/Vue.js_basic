@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id = "app">
+        <p>{{customer_list[1]}}さん、いらっしゃいませ！</p>
+        <p>商品名:{{item.name}}, 値段:{{item.price}}円</p>
+         <p>{{amount}}個なので、合計は:{{item.price * amount}}円です！</p>
+        <br>
+        <p>算出プロパティで作成したの乱数：{{randomFromComputed}}</p>
+        <p>メソッドで作成した乱数：{{randomFromMethods()}}</p>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
