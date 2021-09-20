@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id = "app">
+        <button v-on:click="light = !light">ON/OFF</button>
+        <p v-if="light">点灯！</p>
+        <p v-else>消灯....</p>
+    </div>
+    <script src = "index.js"></script> -->
+
+    <div id = "app">
+        <button v-on:click="light = !light">ON/OFF</button>
+        <p v-if="light">点灯！</p>
+        <p v-show="light">点灯！(v-show)</p>
+    </div>
+    <script src = "index.js"></script>
+
+</body>
+</html>

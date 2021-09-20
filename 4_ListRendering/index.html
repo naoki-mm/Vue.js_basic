@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id = "app">
+      <button v-on:click="addMember">要素追加</button>
+      <ul>
+        <li v-for="member in team" v-bind:key="team.id">
+          名前：{{member.name}}  学籍番号：{{member.id}}
+        </li>
+      </ul>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
