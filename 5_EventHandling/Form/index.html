@@ -8,10 +8,13 @@
 
 <body>
     <div id = "app">
-      <button v-on:click="addCount">+1</button><br>
-
-      {{count}}<br>
-      <button v-on:click="callDelete">削除</button>
+      <input type="text" ref="name">
+      <button v-on:click="addMember">メンバー追加</button> <!-- 名称変更-->
+      <ul>
+        <li v-for="member in team" v-bind:key="team.id">
+          名前：{{member.name}}  学籍番号：{{member.id}}
+        </li>
+      </ul>
     </div>
     <script src = "index.js"></script>
 </body>
